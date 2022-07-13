@@ -10,10 +10,24 @@
 body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
+	color: var(--dark);
 }
 
 body > * {
 	width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+}
+
+p {
+	line-height: 1.2em;
 }
 
 .container {
@@ -23,7 +37,7 @@ body > * {
 	max-width: var(--maxwidth);
 	margin: 0 auto;
 	align-items: center;
-	padding: 2rem 0;
+	padding: var(--gap) 0;
 }
 
 .header {
@@ -71,6 +85,11 @@ h1 {
 	margin-bottom: 1rem;
 }
 
+h2 {
+	font-size: 36px;
+	font-weight: 900;
+}
+
 button {
 	background-color: var(--blue);
 	color: var(--light);
@@ -79,4 +98,27 @@ button {
 	font-weight: bold;
 	font-size: 18px;
 	border: none;
+}
+
+.information .container {
+	flex-direction: column;
+}
+
+.cards {
+	display: flex;
+	gap: clamp(2rem, 10%, 5rem);
+	padding: 0 var(--gap);
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 1rem;
+}
+
+.card .image {
+	height: 200px;
+	border: 5px solid var(--blue);
+	border-radius: 10px;
 }
