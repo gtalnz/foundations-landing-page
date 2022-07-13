@@ -155,3 +155,23 @@ button {
 	content: '-';
 	font-weight: 700;
 }
+
+.cta {
+	width: 100%;
+	border-radius: 10px;
+	margin: calc(2 * var(--gap)) 0;
+	padding: calc(1.5 * var(--gap)) calc(4 * var(--gap));
+	background-color: var(--blue);
+	color: var(--light);
+	display: flex;
+	gap: var(--gap);
+	justify-content: space-between;
+}
+
+.cta .text p {
+	color: var(--secondary);
+}
+
+.cta button {
+	border: 3px solid var(--light);
+}
