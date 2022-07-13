@@ -68,6 +68,12 @@ p {
 	width: 50%;
 }
 
+.hero .content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap);
+}
+
 .hero p {
 	color: var(--secondary);
 	font-size: 18px;
@@ -81,8 +87,6 @@ p {
 h1 {
 	font-weight: 900;
 	font-size: 48px;
-	margin-top: 0;
-	margin-bottom: 1rem;
 }
 
 h2 {
@@ -98,6 +102,9 @@ button {
 	font-weight: bold;
 	font-size: 18px;
 	border: none;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
 }
 
 .information .container {
@@ -121,4 +128,30 @@ button {
 	height: 200px;
 	border: 5px solid var(--blue);
 	border-radius: 10px;
+}
+
+.testimonials {
+	background-color: var(--secondary);
+	color: var(--dark);
+}
+
+.quote {
+	max-width: 80%;
+	margin: var(--gap) auto;
+}
+
+.quote .text {
+	font-style: italic;
+	font-size: 36px;
+	font-weight: 300;
+}
+
+.quote .source {
+	font-weight: 700;
+	text-align: right;
+}
+
+.quote .source::before {
+	content: '-';
+	font-weight: 700;
 }
