@@ -175,3 +175,12 @@ button {
 .cta button {
 	border: 3px solid var(--light);
 }
+
+footer {
+	background-color: var(--dark);
+	color: var(--light);
+}
+
+footer .container {
+	justify-content: center;
+}
