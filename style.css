@@ -23,13 +23,13 @@ body > * {
 	max-width: var(--maxwidth);
 	margin: 0 auto;
 	align-items: center;
+	padding: 2rem 0;
 }
 
 .header {
 	background-color: var(--dark);
 	color: var(--light);
 	width: 100%;
-	padding: 1rem 0;
 }
 
 .header .logo {
@@ -41,4 +41,42 @@ body > * {
 .header .header-link {
 	flex: 0 1 auto;
 	font-size: 18px;
+	color: var(--secondary);
+}
+
+.hero {
+	background-color: var(--dark);
+	color: var(--light);
+	width: 100%;
+}
+
+.hero .container > * {
+	width: 50%;
+}
+
+.hero p {
+	color: var(--secondary);
+	font-size: 18px;
+}
+
+.hero img {
+	width: 100%;
+	height: auto;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 48px;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+button {
+	background-color: var(--blue);
+	color: var(--light);
+	padding: 0.5rem 2rem;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
 }
