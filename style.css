@@ -1,0 +1,44 @@
+:root {
+	--light: #f9faf8;
+	--dark: #1f2937;
+	--secondary: #e5e7eb;
+	--blue: #3882f6;
+	--maxwidth: 1024px;
+	--gap: 2rem;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body > * {
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	gap: var(--gap);
+	max-width: var(--maxwidth);
+	margin: 0 auto;
+	align-items: center;
+}
+
+.header {
+	background-color: var(--dark);
+	color: var(--light);
+	width: 100%;
+	padding: 1rem 0;
+}
+
+.header .logo {
+	font-weight: bold;
+	font-size: 24px;
+	flex: 1 0 auto;
+}
+
+.header .header-link {
+	flex: 0 1 auto;
+	font-size: 18px;
+}
